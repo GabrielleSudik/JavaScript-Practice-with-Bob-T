@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>5. JavaScript Variables, Types, Operators and Expressions</title>
+  <script type="text/javascript">
+
+  //we first typed the following. it showed Sudik would show in the alert.
+  //then we coded everything out, so Bob could teach us commenting
+
+  /*var someValue;
+  someValue = "Tabor";
+
+  someValue = "Sudik";*/
+
+  //we can declare and initialize, or just declare then initialize
+  //we can even use: someValue = "Tabor"; to declare, but it's not a good practice
+
+  var someValue = "Tabor";
+  alert(someValue);
+
+  //vars can start with a _ or a $. but use camel case to indicate it's a local variable, not global.
+
+  //now you'll try a bunch of stuff, for learnin'
+
+  var myValue = "Bob";
+  alert (typeof myValue);
+
+  var myValue2 = 3.14;
+  alert (typeof myValue2);
+
+  var myValue3 = 3.12;
+  var result = myValue2 * myValue3;
+  alert(result);
+
+  var myValueBool = false;
+  alert(myValueBool);
+
+  var myValue4;
+  alert(myValue4);
+  //will print "undefined"
+
+  //what if we change from one type to another:
+  var myValue5 = "Ginny";
+  myValue5 = 4.32;
+  alert(typeof myValue5);
+  //ie -- variable type can change in js, unlike in C#
+
+  //how to deal with special characters in strings like this:
+  //var thisValue1 = "My "so called" life.";
+  //do:
+  var thisValue1 = "My \"so called\" life.";
+  alert(thisValue1);
+
+  //single quotes also work (Bob recommends double for literal strings, singles for other stuff)
+  var thisValue2 = 'I\'m pretty sure this will work.';
+  alert(thisValue2);
+
+  //to "break":
+  var thisValue3 = "Bob \rwas \rhere.";
+  alert(thisValue3);
+  
+  </script>
+</head>
+<body>
+  <h1>5. JavaScript Variables, Types, Operators and Expressions</h1>
+<h3>Some random stuff that works in javascript:</h3>
+<ul>
+  <li>var someValue2 = 2;</li>
+  <li>someValue2 = 2 + 5;</li>
+  <li>someValue2 = 7 * 7;</li>
+  <li>someValue2 = 7 / 5;</li>
+  <li>someValue2++;</li>
+  <li>someValue2--;</li>
+  <li>someValue2+=7;</li>
+  <li>someValue2*=2;</li>
+</ul>
+<p>Ie, operators similar to C#</p>
+<p>Concatenation: fullName = "Gaby" + " " + "Sudik"; </P>
+<h3>Other stuff is in comments in the code.</h3>
+<h4>search for javascript built-in functions for a bunch of stuff</h4>
+<br>
+<p>A lot of stuff in this lesson was printed to the alert box, <br>
+but the syntax, etc. should work elsewhere, too.</p>
+</body>
+</html>

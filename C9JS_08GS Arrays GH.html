@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>8. JavaScript Arrays</title>
+  <script type="text/javascript">
+
+var candidates = [];
+candidates[0] = "Locke";
+candidates[1] = "Hobbes";
+candidates[2] = "Plato";
+candidates[3] = "Dworkin";
+
+alert("Jake votes for " + candidates[3]);
+
+//there's an easier way too:
+//these are kind of like C#
+
+var candies = ["MnM", "Rollo", "Kiss"];
+
+alert(candies[1]);
+
+//you can mix datatypes
+//like here, a string, an int, a datetime variable
+
+var flightDate = new Date("September 22, 2004");
+var myValues = ["Iceland Air", 815, flightDate];
+
+for (i in myValues)
+{
+  document.write("<br/>" + myValues[i]);
+}
+
+//Associative arrays:
+
+var caveList = [];
+caveList["Lucy"] = 4;
+caveList["Linus"] = 8;
+caveList["Charlie"] = 15;
+caveList["Marcie"] = 16;
+caveList["Patty"] = 23;
+
+alert("Peanut's cavesite number: " + caveList["Linus"]);
+
+//I guess these would be useful if each element is way more complicated than an integer.
+
+  </script>
+</head>
+
+<body>
+  <h1>8. JavaScript Arrays</h1>
+<p>Bunch of array examples in the code, mostly using alerts. Check it out.</p>
+</body>
+</html>

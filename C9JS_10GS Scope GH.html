@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>10. Function vs Global Scope</title>
+  <script type="text/javascript">
+
+if (true) {
+  var x=5;
+}
+alert(x);
+//see how x worked outside the block of code?
+
+myScope = "global";
+
+(function() {
+  alert('inside the function, the scope is: ' +myScope);
+}) ();
+
+alert('outside the function, the scope is: ' +myScope);
+
+//that var also worked inside and outside the block
+
+
+(function() {
+ var myScope2 = "also global";
+  alert('inside the function, the scope is: ' +myScope2);
+}) ();
+
+/*
+alert('outside the function, the scope is: ' +myScope2);
+*/
+//but HERE, the var does NOT work outside the block.
+//why not? I think it's because it's inside a function, not just a block of code.
+
+(function() {
+  if (true)
+  {
+    var myScope3 = "third time!";
+  }
+  alert('inside the function, the scope is: ' +myScope3);
+}) ();
+
+//in that example, the var worked outside the block of code, but within the function.
+
+alert('outside the function, the scope is: ' +myScope3);
+//that var does not work outside the function.
+
+  </script>
+</head>
+
+
+<body>
+  <h1>10. Function vs Global Scope</h1>
+  <p>This is about when varibables work outside blocks of code, and when they don't.</p>
+  <p>Like other modules, check your code for notes.</p>
+  <p>Basically, blocks of code don't limit where a variable is known...<br/>
+But variables defined within a function aren't known outside of the function.</p>
+</body>
+</html>

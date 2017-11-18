@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Example</title>
+
+  <script type="text/javascript">
+    function substitute() {
+      var myValue = document.getElementById('myTextBox').value;
+
+      if (myValue.length == 0){
+        alert('Please type something in the text box.');
+        return;
+      }
+
+      var myTitle = document.getElementById('title');
+      myTitle.innerHTML = myValue;
+
+    }
+
+
+  </script>
+
+</head>
+<body>
+  <h1 id="title">JavaScript Example</h1>
+
+  <input type="text" id="myTextBox" />
+  <input type="submit" value="Click Me" onclick="substitute()" /> <br>
+<br>
+
+ Remember, the "id"s label things so you can refer to them in functions (and css when used).
+ onclick="substitute()" is what calls the function when you click the box.
+ then the stuff that happens is contained in the function up above.
+
+</body>
+</html>
+

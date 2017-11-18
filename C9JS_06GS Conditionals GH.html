@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>6. Conditional Logic in JavaScript</title>
+  <script type="text/javascript">
+
+var someValue = 24;
+var otherValue = 23;
+
+if (someValue > 30){
+  alert("first case");
+}
+else if (someValue === 30){
+  alert("second case");
+}
+else if (someValue === 24){
+  alert("third case");
+} 
+else{
+  alert("fourth case");
+}
+
+if (someValue > 20 && otherValue > 20){
+  alert("fifth case");
+}
+
+if (someValue === 24 || otherValue ===24){
+  alert("sixth case");
+}
+
+if (someValue !== 25){
+  alert("seventh case");
+}
+
+//redefine your variable:
+someValue = false;
+
+if (!someValue === false){
+  alert("true or false?");
+}
+else{
+  alert("false or true?");
+}
+
+//so here's some stuff you don't quite remember...
+var myResult = "";
+myResult = (someValue === 24) ? "equal" : "not equal";
+  alert(myResult);
+//what does it mean? if the expression in () is true, it will return first item; 
+//if not, it will return second. Bob calls them "truthy and falsey".
+//so, it's pretty easy.
+
+/*var userName = "Rimmer";
+switch (userName)
+{
+  case: "Lister":
+    document.write("Care for a good curry?");
+    break;
+  case: "Rimmer":
+    document.write("Welcome back, smeg head. [lol smeg]");
+    break;
+  default:
+    document.write("Are you an emohawk?");
+    break;
+} */
+//not sure why that didn't work... or why it stopped the alerts from working.
+//oh well, it shows switch works in js.
+
+/*var rightNow = new Date();
+var currentHour = rightNow.getHours();
+switch(true)
+{
+  case: (currentHour > 0 && currentHour < 12):
+    alert("Morning, sunshine.");
+    break;
+  case: (currentHour === 12):
+    alert("Lunchtime.");
+    break;
+  case: (currentHour > 12 && currentHour < 18):
+    alert("Siesta.");
+    break;
+  default:
+    alert("Bedtime.");
+    break;
+} */
+//hmm... that didn't work either, and stopped the other alerts too.
+//something's up with switch.
+
+
+
+  </script>
+</head>
+
+
+<body>
+  <h1>6. Conditional Logic in JavaScript</h1>
+  <p>You've been learning using "alerts" -- check your code for notes and stuff.
+You practiced various conditional statements, including switch.</P>
+  <h3>What's up with == and === in JavaScript?</h3>
+  <p>Oh, just use === or !== when doing comparisons. You missed the why lol.</P>
+</body>
+</html>

@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>7. JavaScript Functions</title>
+
+  <script typ="text/javascript">
+
+function myNewFunction() {
+  alert("Howdy!");
+}
+
+myNewFunction();
+
+
+
+function myNextFunction(myValue) {
+  alert("Howdy, " + myValue);
+}
+
+myNextFunction("pardner");
+
+
+function add(firstNum, secondNum) {
+ return firstNum + secondNum;
+}
+
+//the next line calls the function in part two.
+//but you need part one to "capture" what is returned from the function
+//then in the second line, you print what you captured from the return.
+var result = add(2, 3);
+alert(result);
+
+
+//you can write functions that don't have fixed parameters
+//this one will accept any number of arguments
+//then works with them using a for loop
+function addMore() {
+  var tempValue = 0;
+  for (i = 0; i < arguments.length; i++)
+  {
+    tempValue += arguments[i];
+  }
+  return tempValue;
+}
+
+var myTotal = addMore(2, 3, 4, 5, 6);
+alert(myTotal);
+
+
+//here, we create a variable whose definition is a function
+//note the function itself is not named.
+//I don't know if there's a difference between naming the function and naming a variable that is a function
+var addMe = function() {
+  return arguments[0] + arguments[1];
+}
+
+var myNewValue = addMe(5,7);
+alert(myNewValue);
+
+
+//let's see what happens if you name the function too:
+/*var addMoo = function bob() {
+  return arguments[0] + arguments[1];
+}
+
+
+var myMooValue = bob(4,5);
+alert(myMooValue);
+*/
+//answer: nothing.
+//defining a function is called a "function literal"
+//so why define a whole function? You can use the variable in other functions and stuff.
+
+//anonymous functions:
+//it's got no name!
+//very common in jquery
+var myResult2 = (function() {
+  return arguments[0] + arguments[1];
+}) (6,7);
+alert(myResult2);
+
+//that can also be made more compact, like here
+//you don't even need the variable, just put the function in the alert
+alert((function() {
+  return arguments[0] + arguments[1];
+}) (5,9));
+
+
+  </script>
+</head>
+<body>
+  <h1>7. JavaScript Functions</h1>
+  <input type="submit" value="Click Me!" onclick="myNewFunction();" />
+  <p>You've got several js scripts here, check the code for notes.
+</body>
+</html>

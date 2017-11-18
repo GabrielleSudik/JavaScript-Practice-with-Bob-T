@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>9. Loops in JavaScript</title>
+  <script type="text/javascript">
+
+var playlist = [];
+playlist[0] = "Tusk";
+playlist[1] = "Rain";
+playlist[2] = "Mama";
+playlist[3] = "Rebel Yell";
+
+//while loop
+var i=0;
+while (i <playlist.length){
+  document.write("<br/>Now playing: " + playlist[i]);
+i++;
+}
+
+//do while loop
+var someResult = false;
+do{
+  document.write("<br/>Will print AT LEAST once.<br/>");
+}
+while (someResult == true)
+
+//for loop
+for (var i = 0; i <playlist.length; i++)
+{
+  document.write("<br/>Now Playing: " + playlist[i]);
+}
+
+//for in loop
+for (i in playlist){
+  document.write("<br/>And NOW playing: " + playlist[i]);
+}
+
+//obviously, you can do all these loops with the normal tricks:
+//iterate by multiple, count backwards, etc.
+
+  </script>
+</head>
+
+
+
+<body>
+  <h1>9. Loops in JavaScript</h1>
+<p>Check out your code in the, um... code.</P>
+<p>This gets me thinking... create a bunch of loops of loops. Do 27, like the Ptolomeic system.</p>
+</body>
+</html>
