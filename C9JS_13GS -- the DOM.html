@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>13. Understanding the Document Object Model</title>
+    <script type="text/javascript" src="script13.js"></script>
+  </head>
+  <body>
+    <h1 id="title">13. Understanding the Document Object Model</h1>
+    <div id="main">
+      <p id="first">Some stuff we're learning in this lesson: How the DOM works, waiting for onload before javascript can start working, how to navigate and change the DOM, fetching elements, changing elements, etc.</p>
+      <p id="second">
+	<strong>Second paragraph</strong>    
+      </p>
+      <p id="third">Third paragraph</p>
+	<p>Your notes are in the script13.js file</p>
+    </div>
+    <div id="form">
+    <script type="text/javascript">
+      document.getElementById('clickMe').onclick = runTheExample;
+    </script>
+      <input type="submit" id="clickMe" value="Click Me" />
+
+      <a href="http://www.bing.com" id="myAnchor">Bing!</a>
+    </div>
+  </body>
+</html>
